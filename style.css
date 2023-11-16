@@ -1,0 +1,532 @@
+@charset "UTF-8";
+
+:root {
+  /* Color Pallet */
+  --bs-royal-decree: #413344;
+  --bs-your-magesty: #614c65;
+  --bs-sunshone-plum: #806485;
+  --bs-bermuda-onion: #936397;
+  --bs-prickly-purple: #a662a8;
+  --bs-neon-violet: #664972;
+  --bs-madonna: #463c57;
+  --bs-denim: #6e8da9;
+  --bs-adrift-on-the-nile: #91bcdd;
+  --bs-montreux-blue: #567d99;
+  --bs-atlantis: #395e77;
+  --bs-mediterranea: #305662;
+  --bs-mysterious-waters: #264d4d;
+  --bs-hunter-green: #315c45;
+  --bs-bullfrog: #8a9a65;
+  --bs-savannah-grass: #b6b975;
+  --bs-tandoori: #b65d54;
+  --bs-warlord: #b60033;
+  --bs-petal-of-a-dying-rose: #98062d;
+  --bs-burgundy: #800022;
+  --bs-aquamarine: #9dc6d8;
+  --bs-scuba-blue: #00b3ba;
+  --bs-lucite-green: #7dd0b6;
+  --bs-classic-blue: #1d4e89;
+  --bs-toasted-almond: #d2b29b;
+  --bs-strawberry-ice: #e38690;
+  --bs-tangerine-orange: #f69256;
+  --bs-custard-yellow: #ead98b;
+  --bs-marsala-red: #965251;
+  --bs-glacier-gray: #c6cccc;
+  --bs-white: #ffffff;
+  --bs-moonstone-blue: #73a9c2;
+  --bs-international-orange: #c0362c;
+  --bs-inverted-purple: #6437b7;
+  --bs-pale-silver: #c9c0bb;
+  --bs-shadow: #9bc848;
+  --bs-mount-olympus: #ccffff;
+  --bs-midnight-dreams: #06283D;
+  --bs-glitter-lake: #47B5FF;
+  --bs-sea-goddess: #256d85;
+  --bs-light-cyan: #dff6ff;
+  --bs-black: #010101;
+  --bs-nero: #1c1c1c;
+  --bs-charcoal: #4a4a4a;
+  --bs-dim-gray: #6d6d6d;
+  --bs-gainsboro: #e6e6e6;
+}
+
+/* Global Styles */
+
+body {
+  font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+
+.header {
+  padding: 10px;
+  color: var(--bs-white);
+  height: 100px;
+}
+
+.header h1 {
+  font-size: 40px;
+  color: var(--bs-white);
+}
+
+/* Navbar Styles */
+
+/* Navbar Styles */
+.navbar {
+  overflow: hidden;
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  color: var(--bs-white);
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Add Responsive Styles */
+@media (max-width: 767px) {
+  .navbar a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+}
+
+.navbar a:hover {
+  background-color: var(--bs-gainsboro);
+  color: var(--bs-black);
+}
+
+.navbar a.active {
+  background-color: var(--bs-charcoal);
+  color: var(--bs-white);
+}
+
+/* Collapsible Styles */
+
+.collapsible {
+  background-color: var(--bs-custard-yellow);
+  color: var(--bs-charcoal);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1em;
+}
+
+.active,
+.collapsible:hover {
+  background-color: var(--bs-gainsboro);
+}
+
+/* Collapsible Content Styles */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: var(--bs-dim-gray);
+}
+
+
+/* Collapsible Content Styles */
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: var(--bs-dim-gray);
+}
+
+/* Index Page Styles */
+
+.mbody {
+  background-size: 100%;
+  color: var(--bs-sea-goddess);
+  background-color: var(--bs-midnight-dreams);
+  padding: 15px;
+}
+
+.mimg {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Remove any unwanted spacing */
+  margin: 0 auto; /* Center the image */
+}
+
+.mbody ul,
+ol,
+dl {
+  padding: 0;
+  margin: 0;
+}
+
+.mbody h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 10px;
+  padding-right: 5px;
+  padding-left: 15px;
+  color: var(--bs-aquamarine);
+  text-align: left;
+}
+
+.mcontainer {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  margin: 0 auto;
+}
+
+.mcontainer .mcontent h1 {
+  font-size: medium;
+}
+
+.mcontainer .msidebar1 p {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: var(--bs-aquamarine);
+  font-size: xx-small;
+  text-align: center;
+  line-height: 15px;
+}
+
+.mcontent {
+  padding: 10px;
+  width: 100%;
+  float: right;
+}
+
+.mfooter {
+  color: var(--bs-sea-goddess);
+  padding: 10px 0;
+  position: relative;
+  clear: both;
+}
+
+/* Gaming Page Styles */
+
+.gbody {
+  background: var(--bs-nero);
+  background-size: cover;
+  width: auto;
+  height: auto;
+}
+
+.gbody p {
+  font-family: serif, arial;
+  font-size: 16px;
+}
+
+.gbody h1 {
+  color: #73a9c2;
+  text-align: center;
+}
+
+g.body a:link {
+  color: #c0362c;
+}
+
+.gbody a:hover {
+  color: #6437b7;
+}
+
+.gbody a:visited {
+  color: #c9c0bb;
+}
+
+.gbody .italictext {
+  font-style: italic;
+}
+
+.gbody .boldtext {
+  font-weight: bold;
+}
+
+.fallout {
+  background-image: url("https://wallpaper.dog/large/5455445.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ccffff;
+  height: 450px;
+  border: auto;
+  margin: auto;
+  padding: 10px;
+  text-shadow: 2px 2px #0a0000;
+  height: fit-content;
+}
+
+.halo {
+  background-image: url("https://wallpapercave.com/wp/wp4302949.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ccffff;
+  height: 450px;
+  border: auto;
+  margin: auto;
+  padding: 10px;
+  text-shadow: 2px 2px #0a0000;
+  height: fit-content;
+}
+
+.gz {
+  background-image: url("https://th.bing.com/th/id/R.aeb6a9d208f78834e4b2c97cd523259a?rik=pgiKksnVT5cAxw&pid=ImgRaw&r=0");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ccffff;
+  height: 450px;
+  border: auto;
+  margin: auto;
+  padding: 10px;
+  text-shadow: 2px 2px #0a0000;
+  height: fit-content;
+}
+
+.ttwl {
+  background-image: url("https://www.hdwallpapers.in/download/tiny_tina_4k_hd_tiny_tinas_wonderlands-3840x2160.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ccffff;
+  height: 450px;
+  border: auto;
+  margin: auto;
+  padding: 10px;
+  text-shadow: 2px 2px #0a0000;
+  height: fit-content;
+}
+
+.d3 {
+  background-image: url("https://th.bing.com/th/id/R.76941f980ea5c77eebe15945bbd4ec1d?rik=0DKeipnoHEQPAg&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2fb%2f5%2fd%2f682704.jpg&ehk=ihEfT3%2f6DrvqMeX8ClbC9j6Hzifp%2fk0GK%2bgEQmvid80%3d&risl=&pid=ImgRaw&r=0");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #abebeb;
+  height: 450px;
+  border: auto;
+  margin: auto;
+  padding: 10px;
+  text-shadow: 2px 2px #0a0000;
+  height: fit-content;
+}
+
+.d4 {
+  background-image: url("https://wallpapercave.com/wp/wp8236815.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #abebeb;
+  height: 450px;
+  border: auto;
+  margin: auto;
+  padding: 10px;
+  text-shadow: 2px 2px #0a0000;
+  height: fit-content;
+}
+
+.ark {
+  background-image: url("https://wallpapercave.com/wp/wp2473763.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #abebeb;
+  height: 450px;
+  border: auto;
+  margin: auto;
+  padding: 10px;
+  text-shadow: 2px 2px #0a0000;
+  height: fit-content;
+}
+
+.thumbnail {
+  border: solid 1px black;
+  width: 15%; /* Adjust as needed */
+  height: auto;
+  cursor: pointer;
+  margin: 5px;
+}
+
+/* Shows and Movies Page Styles */
+
+.sbody {
+  background-image: url("https://th.bing.com/th/id/R.4b15678052dc44bfa04f9d71243f522a?rik=FVCFaiMyUGcItQ&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f3%2f5%2f8%2f284802.jpg&ehk=f9OPprAbxAeI3ZFPqpbBr6X5TJ%2bOgfmr573diTXI2HQ%3d&risl=&pid=ImgRaw&r=0");
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sbody p {
+  font-family: serif, arial;
+  font-size: 16px;
+}
+
+.sbody h1 {
+  color: #73a9c2;
+  text-align: center;
+}
+
+.sbody ul,
+.sbody ol,
+.sbody dl {
+  padding: 0;
+  margin: 0;
+}
+
+.sbody h1,
+.sbody h2,
+.sbody h3,
+.sbody h4,
+.sbody h5,
+.sbody h6,
+.sbody p {
+  margin-top: 10px;
+  padding-right: 5px;
+  padding-left: 15px;
+  color: var(--bs-aquamarine);
+  text-align: left;
+}
+
+.scontainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stable {
+  background-color: var(--bs-black);
+  text-align: center;
+  color: var(--bs-glacier-gray);
+  margin: auto;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, cursive;
+  padding: 10px;
+}
+
+.sbody table,
+.sbody th,
+.sbody td {
+  border: 0.5px solid var(--bs-denim);
+  width: 100%;
+  padding: 15px;
+}
+
+.ssidebar1 {
+  float: none;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.scontainer .scontent h1 {
+  font-size: medium;
+}
+
+.scontainer .ssidebar1 p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--bs-aquamarine);
+  font-size: xx-small;
+  text-align: center;
+  line-height: 15px;
+}
+
+.scontent {
+  padding: 10px;
+  width: 100%;
+}
+
+ul.snav1 {
+  list-style: none;
+  border-top: 1px solid var(--bs-midnight-dreams);
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+ul.snav1 li {
+  border-bottom: 1px solid var(--bs-midnight-dreams);
+  padding: 0;
+}
+
+ul.snav1 a,
+ul.snav1 a:visited {
+  padding: 5px 5px 5px 5px;
+  display: block;
+  text-decoration: none;
+  color: var(--bs-international-orange);
+}
+
+ul.snav1 a:hover,
+ul.snav1 a:active,
+ul.snav1 a:focus {
+  color: var(--bs-glitter-lake);
+}
+
+.sfooter {
+  color: var(--bs-white);
+  padding: 10px 0;
+  position: relative;
+  clear: both;
+}
+
+.show{
+  height: 250px;
+  width:auto;
+  border: 0px;
+  border-radius:25px;
+}
+
+.network{
+  height: 145px;
+  width: auto;
+  }
+
+
+
+/* Trips and Adventures */
+
+.abody {
+  background-image: url('/roadtrip.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px; /* Adjust padding as needed */
+}
+
+.aimg {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  width: 225px;
+  margin: 5px;
+  position: relative;
+  z-index: 1;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.enlarged {
+  transform: scale(3);
+  z-index: 3;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+}
+.afooter {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px; /* Adjust padding as needed */
+}
