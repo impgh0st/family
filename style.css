@@ -350,7 +350,6 @@ g.body a:link {
 }
 
 /* Shows and Movies Page Styles */
-
 .sbody {
   background-image: url("https://th.bing.com/th/id/R.4b15678052dc44bfa04f9d71243f522a?rik=FVCFaiMyUGcItQ&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f3%2f5%2f8%2f284802.jpg&ehk=f9OPprAbxAeI3ZFPqpbBr6X5TJ%2bOgfmr573diTXI2HQ%3d&risl=&pid=ImgRaw&r=0");
   background-size: cover;
@@ -487,7 +486,7 @@ ul.snav1 a:focus {
 /* Trips and Adventures */
 
 .abody {
-  background-image: url('/roadtrip.jpg');
+  background-image: url('img_trips/stones.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -527,6 +526,5 @@ ul.snav1 a:focus {
   width: 75%;
 }
 .afooter {
-  background-color: rgba(255, 255, 255, 0.7);
   padding: 10px; /* Adjust padding as needed */
 }
